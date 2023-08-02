@@ -47,13 +47,13 @@ public class XmlEscapers {
   // that are considered authoritative for the behavior of that escaper.
 
   /**
-   * Returns an {@link Escaper} instance that escapes special characters in a string so it can
+   * Returns an {@code Escaper} instance that escapes special characters in a string so it can
    * safely be included in an XML document as element content. See section <a
    * href="http://www.w3.org/TR/2008/REC-xml-20081126/#syntax">2.4</a> of the XML specification.
    *
    * <p><b>Note:</b> Double and single quotes are not escaped, so it is <b>not safe</b> to use this
-   * escaper to escape attribute values. Use {@link #xmlContentEscaper} if the output can appear in
-   * element content or {@link #xmlAttributeEscaper} in attribute values.
+   * escaper to escape attribute values. Use {@code #xmlContentEscaper} if the output can appear in
+   * element content or {@code #xmlAttributeEscaper} in attribute values.
    *
    * <p>This escaper substitutes {@code 0xFFFD} for non-whitespace control characters and the
    * character values {@code 0xFFFE} and {@code 0xFFFF} which are not permitted in XML. For more
@@ -73,7 +73,7 @@ public class XmlEscapers {
   }
 
   /**
-   * Returns an {@link Escaper} instance that escapes special characters in a string so it can
+   * Returns an {@code Escaper} instance that escapes special characters in a string so it can
    * safely be included in XML document as an attribute value. See section <a
    * href="http://www.w3.org/TR/2008/REC-xml-20081126/#AVNormalize">3.3.3</a> of the XML
    * specification.
